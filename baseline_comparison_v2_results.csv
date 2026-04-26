@@ -1,0 +1,6 @@
+Model,MAE (kW),RMSE (kW),MAE Reduction,RMSE Reduction
+"ARIMA (3,1,2)",1266.5,1695.43,—,—
+Standalone LSTM,180.39,277.04,85.8%,83.7%
+XGBoost,171.88,275.64,86.4%,83.7%
+Transformer (encoder-only),283.27,411.58,77.6%,75.7%
+Hybrid ARIMA-LSTM (Proposed),172.13,270.2,86.4%,84.1%
