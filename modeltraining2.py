@@ -158,7 +158,7 @@ def objective(trial):
     model.fit(
         X_train, y_train,
         validation_data=(X_val, y_val),
-        epochs=10, batch_size=batch_size, verbose=0
+        epochs=20, batch_size=batch_size, verbose=0
     )
 
     # LSTM prediction in kW
@@ -175,7 +175,7 @@ def objective(trial):
 
 
 study = optuna.create_study(direction="minimize")
-study.optimize(objective, n_trials=10)
+study.optimize(objective, n_trials=30)
 
 best = study.best_params
 print("\nBest parameters:", best)
